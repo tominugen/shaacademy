@@ -1,0 +1,59 @@
+<header>
+	<!-- Dropdown Structure -->
+	<ul id="dropdown1" class="dropdown-content mask">
+	  <li><%= link_to "My Profile", edit_user_registration_path %></li>
+	  <li><%= link_to "My Projects", myprojects_path %></li>
+	  <li class="divider"></li>
+	  <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+	</ul>
+
+	<ul id="dropdown2" class="dropdown-content mask">
+	  <li><%= link_to "My Profile", edit_user_registration_path %></li>
+	  <li><%= link_to "My Projects", myprojects_path %></li>
+	  <li class="divider"></li>
+	  <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+	</ul>
+
+	<nav class="white darken-1 z-depth-2">
+		<div class="container">
+	    <div class="nav-wrapper">
+				<!-- <%= image_tag 'favicon-satoshi.jpg', alt: 'background', style: 'display: block;height:45px;' %> -->
+
+	      <a href="/" class="brand-logo hayek-text-dark">
+<%= image_tag 'satoshi-horizontal-logo.png', style: 'responsive-img;height:50px;margin-top:5px;'%>
+				</a>
+
+	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+
+	     <!-- <ul class="right hide-on-med-and-down black-text">
+					<!--<li><a href="/project">Cursos</a></li> -->
+	        <!-- <li><%= link_to "Cursos", root_path %></li>
+	        <% if(!user_signed_in?) %>
+		        <li><%= link_to "Sign Up", new_user_registration_path %></li>
+		        <li><%= link_to "Login", new_user_session_path %></li>
+		      <% else%>
+		        <!-- Dropdown Trigger
+			      <li><a class="dropdown-button valign-wrapper" href="#!" data-activates="dropdown1">
+			      	<%= image_tag avatar_url(current_user), class: "circle responsive-img avatar-small" %>&nbsp;
+			      	<%= current_user.name %><i class="mdi-navigation-arrow-drop-down right"></i></a>
+			      </li>
+		      <% end %>
+
+	      </ul>
+	      <ul class="side-nav" id="mobile-demo">
+	        <!--<li><a href="/project" class="hayek-text-dark">Cursos</a></li>
+	        <% if(!user_signed_in?) %>
+		        <li><%= link_to "Sign Up", new_user_registration_path %></li>
+		        <li><%= link_to "Login", new_user_session_path %></li>
+		      <% else%>
+		        <!-- Dropdown Trigger
+			      <li><a class="dropdown-button valign-wrapper" href="#!" data-activates="dropdown2">
+				      <%= image_tag avatar_url(current_user), class: "circle responsive-img avatar-small" %>&nbsp;
+				      <%= current_user.name %><i class="mdi-navigation-arrow-drop-down right"></i></a>
+				    </li>
+		      <% end %>
+	      </ul> -->
+	    </div>
+    </div>
+  </nav>
+</header>
